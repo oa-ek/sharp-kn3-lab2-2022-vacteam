@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Vacancy.Core;
+﻿using Vacancy.Core;
 using Vacancy.Repository.Dto.CompanyDto;
 using Vacancy.Repository.Dto.EducationDto;
+using Vacancy.Repository.Dto.ResumeDto;
 
 namespace Vacancy.Repository.Repositories
 {

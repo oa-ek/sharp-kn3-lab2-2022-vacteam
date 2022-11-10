@@ -16,6 +16,6 @@ namespace Vacancy.Core
 
         public int InformationId { get; set; }
         public Information? Information { get; set; }
-        public virtual ICollection<Vacancie>? Vacancie { get; set; }
+        public virtual ICollection<Vacancy>? Vacancie { get; set; }
     }
 }

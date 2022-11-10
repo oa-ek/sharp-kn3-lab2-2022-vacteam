@@ -12,6 +12,6 @@ namespace Vacancy.Repository.Dto.RequirementDto
         public int RequirementId { get; set; }
         public string? RequirementName { get; set; }
 
-        public virtual ICollection<Vacancie>? Vacancie { get; set; }
+        public virtual ICollection<Core.Vacancy>? Vacancie { get; set; }
     }
 }

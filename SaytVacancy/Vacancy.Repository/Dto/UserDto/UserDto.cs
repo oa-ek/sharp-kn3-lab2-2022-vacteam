@@ -12,7 +12,7 @@ namespace Vacancy.Repository.Dto.UserDto
         public string? Email { get; set; }
         public bool IsConfirmed { get; set; }     
         public List<IdentityRole>? Roles { get; set; }
-        public virtual ICollection<Vacancie>? Vacancie { get; set; }
+        public virtual ICollection<Core.Vacancy>? Vacancie { get; set; }
         public virtual ICollection<Resume>? Resume { get; set; }
     }
 }

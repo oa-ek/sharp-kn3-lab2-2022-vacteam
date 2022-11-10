@@ -2,7 +2,7 @@
 using Vacancy.Models;
 using System.Diagnostics;
 using Vacancy.Repository.Repositories;
-using Vacancy.Repository.Dto.VacancieDto;
+using Vacancy.Repository.Dto.VacancyDto;
 using Vacancy.Core;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -14,7 +14,7 @@ namespace Vacancy.Controllers
     {
         private readonly ILogger<VacancyController> _logger;
 
-        private readonly VacancieRepositories _vacancieRepositories;
+        private readonly VacancyRepositories _vacancieRepositories;
         private readonly RequirementRepositories _requirementRepositories;
         private readonly AboutvacancieRepositories _aboutvacancieRepositories;
         private readonly EmployerRepositories _employerRepositories;
@@ -28,7 +28,7 @@ namespace Vacancy.Controllers
         private readonly SignInManager<User> _signInManager;
 
         public VacancyController(ILogger<VacancyController> logger,
-            VacancieRepositories vacancieRepositories,
+            VacancyRepositories vacancieRepositories,
             RequirementRepositories requirementRepositories,
             AboutvacancieRepositories aboutvacancieRepositories,
             EmployerRepositories employerRepositories,
@@ -72,7 +72,7 @@ namespace Vacancy.Controllers
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public async Task<IActionResult> Vacansion(VacancieCreateDto vacansieDto, string requirementName, string aboutvacancieName,
+        public async Task<IActionResult> Vacansion(VacancyCreateDto vacansieDto, string requirementName, string aboutvacancieName,
             string employerName, string companyName, string logotypeName, string fieldactivityName, string informationName)
         {
             ViewBag.Reguirement = _requirementRepositories.GetRequirements();
@@ -139,7 +139,7 @@ namespace Vacancy.Controllers
                     user = new User() { Email = User.Identity.Name };
                 }
 
-                var vacancy = await _vacancieRepositories.AddVacancieAsync(new Vacancie
+                var vacancy = await _vacancieRepositories.AddVacancieAsync(new Core.Vacancy
                 {
                     Requirement = requirement,
                     Aboutvacancie = aboutvacancie,
@@ -167,7 +167,7 @@ namespace Vacancy.Controllers
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
-        public async Task<IActionResult> Edit(VacansieReadDto vacansieDto, string requirementName, string aboutvacancieName,
+        public async Task<IActionResult> Edit(VacancyReadDto vacansieDto, string requirementName, string aboutvacancieName,
             string employerName, string companyName, string logotypeName, string fieldactivityName, string informationName)
         {
             if (ModelState.IsValid)

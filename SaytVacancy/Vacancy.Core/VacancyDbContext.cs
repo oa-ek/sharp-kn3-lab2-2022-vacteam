@@ -15,7 +15,7 @@ namespace Vacancy.Core
             base.OnModelCreating(builder);
         }
 
-        public DbSet<Vacancie> Vacancies { get; set; }
+        public DbSet<Vacancy> Vacancies { get; set; }
         public DbSet<Company> Companies  { get; set; }
         public DbSet<Education> Educations { get; set; }
         public DbSet<Aboutvacancie> Aboutvacancies { get; set; }

@@ -7,6 +7,6 @@ namespace Vacancy.Repository.Dto.AboutvacancieDto
         public int AboutvacancieId { get; set; }
         public string? AboutvacancieName { get; set; }
 
-        public virtual ICollection<Vacancie>? Vacancie { get; set; }
+        public virtual ICollection<Core.Vacancy>? Vacancie { get; set; }
     }
 }
