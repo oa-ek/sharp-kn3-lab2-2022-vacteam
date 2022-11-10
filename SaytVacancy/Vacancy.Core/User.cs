@@ -7,7 +7,7 @@ namespace Vacancy.Core
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
 
-        public virtual ICollection<Vacancie>? Vacancie { get; set; }
+        public virtual ICollection<Vacancy>? Vacancie { get; set; }
         public virtual ICollection<Resume>? Resume { get; set; }
     }
 }

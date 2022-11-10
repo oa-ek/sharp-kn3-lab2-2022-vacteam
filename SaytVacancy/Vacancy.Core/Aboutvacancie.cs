@@ -8,6 +8,6 @@ namespace Vacancy.Core
         public int AboutvacancieId { get; set; }
         public string? AboutvacancieName { get; set; }
 
-        public virtual ICollection<Vacancie>? Vacancie { get; set; }
+        public virtual ICollection<Vacancy>? Vacancie { get; set; }
     }
 }

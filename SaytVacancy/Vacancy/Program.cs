@@ -38,7 +38,7 @@ builder.Services.AddTransient<LogotypeRepositories>();
 builder.Services.AddTransient<RequirementRepositories>();
 builder.Services.AddTransient<ResumeRepositories>();
 builder.Services.AddTransient<SkillRepositories>();
-builder.Services.AddTransient<VacancieRepositories>();
+builder.Services.AddTransient<VacancyRepositories>();
 builder.Services.AddControllersWithViews();
 
 

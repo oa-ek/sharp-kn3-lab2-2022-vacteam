@@ -2,7 +2,6 @@
 using Vacancy.Repository.Dto.EducationDto;
 using Vacancy.Repository.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Vacancy.Repository.Dto.AboutvacancieDto;
 
 namespace Vacancy.Controllers
 {
