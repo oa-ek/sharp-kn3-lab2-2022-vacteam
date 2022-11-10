@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Vacancy",
+    "\\Vacancy.Repository",
+    "\\Vacancy.Repository\\Dto",
+    "\\Vacancy.Repository\\Dto\\ResumeDto",
+    "\\Vacancy.Repository\\Repositories",
+    "\\Vacancy\\Controllers"
+  ],
+  "SelectedNode": "\\Vacancy\\Controllers\\UsersController.cs",
+  "PreviewInSolutionExplorer": false
+}

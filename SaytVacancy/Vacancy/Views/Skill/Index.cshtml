@@ -1,0 +1,42 @@
+﻿@using Vacancy.Core
+@using Vacancy.Repository.Dto.SkillDto
+@model IEnumerable<Skill>
+
+@{
+}
+
+<div class="float-end">
+    <a href="/cabinet/create" class="btn btn-outline-primary">Досвід</a>
+</div>
+
+
+<h1>Навички</h1>
+<hr />
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>SkillId</th>
+            <th>SkillName </th>
+            <th>Resume</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.SkillId</td>
+                <td>@u.SkillName </td>
+                <td>@u.Resume</td>
+
+
+                <td>
+                    <a href="/users/edit/@u.SkillId" class="btn btn-warning">Редагувати</a>
+                    <a href="/users/delete/@u.SkillId" class="btn btn-danger">Видалити</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
